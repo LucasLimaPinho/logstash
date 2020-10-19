@@ -48,6 +48,13 @@ So you can start logstash with this command:
 
 ~~~
 
+* Commonly used filters (plug-ins):
 
+    - add_field: add one or more fields to the event;
+    - remove_field: remove one or more fields to the event;
+    - add_tag: add one or more tags to the event;
+    - remove_tag: remove one or more tags to the event;
+    - convert: convert fields data type;
+ 
 
 
