@@ -75,3 +75,17 @@
 [2020-10-19T08:29:19,934][INFO ][logstash.javapipeline    ] Pipeline terminated {"pipeline.id"=>"main"}
 [2020-10-19T08:29:20,951][FATAL][logstash.runner          ] SIGINT received. Terminating immediately..
 [2020-10-19T08:29:21,114][ERROR][org.logstash.Logstash    ] org.jruby.exceptions.ThreadKill
+[2020-10-19T08:29:51,814][WARN ][logstash.config.source.multilocal] Ignoring the 'pipelines.yml' file because modules or command line options are specified
+[2020-10-19T08:29:51,980][INFO ][logstash.runner          ] Starting Logstash {"logstash.version"=>"7.6.2"}
+[2020-10-19T08:29:53,803][INFO ][org.reflections.Reflections] Reflections took 26 ms to scan 1 urls, producing 20 keys and 40 values 
+[2020-10-19T08:29:54,485][WARN ][org.logstash.instrument.metrics.gauge.LazyDelegatingGauge][main] A gauge metric of an unknown type (org.jruby.RubyArray) has been created for key: cluster_uuids. This may result in invalid serialization.  It is recommended to log an issue to the responsible developer/development team.
+[2020-10-19T08:29:54,503][INFO ][logstash.javapipeline    ][main] Starting pipeline {:pipeline_id=>"main", "pipeline.workers"=>8, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>50, "pipeline.max_inflight"=>1000, "pipeline.sources"=>["C:/Users/Semantix/logstash/logstash-7.6.2/config/pipelines/pipeline.conf"], :thread=>"#<Thread:0x41d3a30c run>"}
+[2020-10-19T08:29:55,161][INFO ][logstash.inputs.stdin    ][main] Automatically switching from json to json_lines codec {:plugin=>"stdin"}
+[2020-10-19T08:29:55,327][INFO ][logstash.javapipeline    ][main] Pipeline started {"pipeline.id"=>"main"}
+[2020-10-19T08:29:55,334][INFO ][logstash.inputs.http     ][main] Starting http input listener {:address=>"127.0.0.1:8080", :ssl=>"false"}
+[2020-10-19T08:29:55,389][INFO ][logstash.agent           ] Pipelines running {:count=>1, :running_pipelines=>[:main], :non_running_pipelines=>[]}
+[2020-10-19T08:29:55,662][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2020-10-19T08:29:58,313][INFO ][logstash.outputs.file    ][main] Opening file {:path=>"C:/Users/Semantix/logstash/logstash-7.6.2/output.txt"}
+[2020-10-19T08:30:24,472][INFO ][logstash.outputs.file    ][main] Closing file C:/Users/Semantix/logstash/logstash-7.6.2/output.txt
+[2020-10-19T08:31:59,247][INFO ][logstash.outputs.file    ][main] Opening file {:path=>"C:/Users/Semantix/logstash/logstash-7.6.2/output.txt"}
+[2020-10-19T08:32:14,696][INFO ][logstash.outputs.file    ][main] Closing file C:/Users/Semantix/logstash/logstash-7.6.2/output.txt
