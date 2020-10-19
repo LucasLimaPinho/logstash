@@ -19,7 +19,7 @@ bin/logstash -e "input { stdin { } } output { stdout{ } }"
 
 * The same thing can be done with a configuration file **pipeline.conf** written as this:
 
-~~~~conf
+~~~conf
 
 input {
     stdin {
