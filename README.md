@@ -56,5 +56,16 @@ So you can start logstash with this command:
     - remove_tag: remove one or more tags to the event;
     - convert: convert fields data type;
  
+#### Execution Model
 
+* Inputs go through a codec and reach a Work Queue;
+* From the Work Queue, Logstash use so called pipeline **workers** or **batchers** to perform the rest of the work -> FILTER, OUTPUT, CODEC;
+* Each pipeline worker runs in its own thread, meaning that multiple events can be processed simultaneaously; Increase the throughput of the pipeline as a hole;
+* The batchsize is determined by **2 configuration objects**: 
+    * **maximumBatchSize**: a number representing the maximumBatchSize and the;
+    * **batchDelay**: how long to wait to process an undersized batch);
+    * Consider that we have a maximumBatchSize = 15 and batchDelay = 100ms. The worker pipeline will process events from the worker queue (barramento) if the unprocessed           events reach 15 or the delay reaches 100 ms; Smaller batches are processed when reaching the batchDelay;
+    * Why working with batches? More efficient. Example: the output plugin for Elasticsearch uses the **_bulk** API exposed by Elasticsearch instead of making TONS of POST         requests;
+ * By default, Logstash inspects the number of CPU cores of the hardware to establish the number of **workers** that is going to start running;
+    
 
