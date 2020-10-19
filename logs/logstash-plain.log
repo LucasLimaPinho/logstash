@@ -71,3 +71,7 @@
 [2020-10-19T08:24:57,615][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
 [2020-10-19T08:25:15,028][INFO ][logstash.outputs.file    ][main] Opening file {:path=>"C:/Users/Semantix/logstash/logstash-7.6.2/output.txt"}
 [2020-10-19T08:25:26,258][INFO ][logstash.outputs.file    ][main] Closing file C:/Users/Semantix/logstash/logstash-7.6.2/output.txt
+[2020-10-19T08:29:19,824][WARN ][logstash.runner          ] SIGINT received. Shutting down.
+[2020-10-19T08:29:19,934][INFO ][logstash.javapipeline    ] Pipeline terminated {"pipeline.id"=>"main"}
+[2020-10-19T08:29:20,951][FATAL][logstash.runner          ] SIGINT received. Terminating immediately..
+[2020-10-19T08:29:21,114][ERROR][org.logstash.Logstash    ] org.jruby.exceptions.ThreadKill
