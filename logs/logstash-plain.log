@@ -17,3 +17,6 @@
 [2020-10-19T07:52:32,963][INFO ][logstash.javapipeline    ][main] Pipeline started {"pipeline.id"=>"main"}
 [2020-10-19T07:52:33,020][INFO ][logstash.agent           ] Pipelines running {:count=>1, :running_pipelines=>[:main], :non_running_pipelines=>[]}
 [2020-10-19T07:52:33,332][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2020-10-19T08:06:36,212][WARN ][logstash.runner          ] SIGINT received. Shutting down.
+[2020-10-19T08:06:36,339][INFO ][logstash.javapipeline    ] Pipeline terminated {"pipeline.id"=>"main"}
+[2020-10-19T08:06:36,390][INFO ][logstash.runner          ] Logstash shut down.
