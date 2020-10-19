@@ -20,3 +20,14 @@
 [2020-10-19T08:06:36,212][WARN ][logstash.runner          ] SIGINT received. Shutting down.
 [2020-10-19T08:06:36,339][INFO ][logstash.javapipeline    ] Pipeline terminated {"pipeline.id"=>"main"}
 [2020-10-19T08:06:36,390][INFO ][logstash.runner          ] Logstash shut down.
+[2020-10-19T08:07:46,616][WARN ][logstash.config.source.multilocal] Ignoring the 'pipelines.yml' file because modules or command line options are specified
+[2020-10-19T08:07:46,773][INFO ][logstash.runner          ] Starting Logstash {"logstash.version"=>"7.6.2"}
+[2020-10-19T08:07:48,075][INFO ][org.reflections.Reflections] Reflections took 46 ms to scan 1 urls, producing 20 keys and 40 values 
+[2020-10-19T08:07:48,643][WARN ][org.logstash.instrument.metrics.gauge.LazyDelegatingGauge][main] A gauge metric of an unknown type (org.jruby.RubyArray) has been created for key: cluster_uuids. This may result in invalid serialization.  It is recommended to log an issue to the responsible developer/development team.
+[2020-10-19T08:07:48,671][INFO ][logstash.javapipeline    ][main] Starting pipeline {:pipeline_id=>"main", "pipeline.workers"=>8, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>50, "pipeline.max_inflight"=>1000, "pipeline.sources"=>["C:/Users/Semantix/logstash/logstash-7.6.2/config/pipelines/pipeline.conf"], :thread=>"#<Thread:0x104b087b run>"}
+[2020-10-19T08:07:49,435][INFO ][logstash.javapipeline    ][main] Pipeline started {"pipeline.id"=>"main"}
+[2020-10-19T08:07:49,498][INFO ][logstash.agent           ] Pipelines running {:count=>1, :running_pipelines=>[:main], :non_running_pipelines=>[]}
+[2020-10-19T08:07:49,784][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2020-10-19T08:10:54,981][WARN ][logstash.runner          ] SIGINT received. Shutting down.
+[2020-10-19T08:10:55,101][INFO ][logstash.javapipeline    ] Pipeline terminated {"pipeline.id"=>"main"}
+[2020-10-19T08:10:55,141][INFO ][logstash.runner          ] Logstash shut down.
