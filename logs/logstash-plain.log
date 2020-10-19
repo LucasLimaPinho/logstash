@@ -42,3 +42,21 @@
 [2020-10-19T08:15:39,080][WARN ][logstash.runner          ] SIGINT received. Shutting down.
 [2020-10-19T08:15:39,231][INFO ][logstash.javapipeline    ] Pipeline terminated {"pipeline.id"=>"main"}
 [2020-10-19T08:15:39,287][INFO ][logstash.runner          ] Logstash shut down.
+[2020-10-19T08:16:55,913][WARN ][logstash.config.source.multilocal] Ignoring the 'pipelines.yml' file because modules or command line options are specified
+[2020-10-19T08:16:56,031][INFO ][logstash.runner          ] Starting Logstash {"logstash.version"=>"7.6.2"}
+[2020-10-19T08:16:57,355][INFO ][org.reflections.Reflections] Reflections took 31 ms to scan 1 urls, producing 20 keys and 40 values 
+[2020-10-19T08:16:57,917][WARN ][org.logstash.instrument.metrics.gauge.LazyDelegatingGauge][main] A gauge metric of an unknown type (org.jruby.RubyArray) has been created for key: cluster_uuids. This may result in invalid serialization.  It is recommended to log an issue to the responsible developer/development team.
+[2020-10-19T08:16:57,933][INFO ][logstash.javapipeline    ][main] Starting pipeline {:pipeline_id=>"main", "pipeline.workers"=>8, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>50, "pipeline.max_inflight"=>1000, "pipeline.sources"=>["C:/Users/Semantix/logstash/logstash-7.6.2/config/pipelines/pipeline.conf"], :thread=>"#<Thread:0x4684cc37 run>"}
+[2020-10-19T08:16:58,579][INFO ][logstash.inputs.stdin    ][main] Automatically switching from json to json_lines codec {:plugin=>"stdin"}
+[2020-10-19T08:16:58,624][INFO ][logstash.javapipeline    ][main] Pipeline started {"pipeline.id"=>"main"}
+[2020-10-19T08:16:58,673][INFO ][logstash.agent           ] Pipelines running {:count=>1, :running_pipelines=>[:main], :non_running_pipelines=>[]}
+[2020-10-19T08:16:58,895][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2020-10-19T08:17:57,968][WARN ][logstash.codecs.jsonlines][main] JSON parse error, original data now in message field {:error=>#<LogStash::Json::ParserError: Unexpected character ('2' (code 50)): was expecting a colon to separate field name and value
+ at [Source: (String)"{ "amount": 10, "quantity: "2" }"; line: 1, column: 30]>, :data=>"{ \"amount\": 10, \"quantity: \"2\" }\r"}
+[2020-10-19T08:18:17,070][WARN ][logstash.codecs.jsonlines][main] JSON parse error, original data now in message field {:error=>#<LogStash::Json::ParserError: Illegal unquoted character ((CTRL-CHAR, code 13)): has to be escaped using backslash to be included in name
+ at [Source: (String)"{ "amount": 10, "quantity: 2 }"; line: 1, column: 32]>, :data=>"{ \"amount\": 10, \"quantity: 2 }\r"}
+[2020-10-19T08:20:52,028][WARN ][logstash.codecs.jsonlines][main] JSON parse error, original data now in message field {:error=>#<LogStash::Json::ParserError: Unexpected character ('{' (code 123)): was expecting double-quote to start field name
+ at [Source: (String)"{{ "name": "order1"}, {"name": "order2"}}"; line: 1, column: 3]>, :data=>"{{ \"name\": \"order1\"}, {\"name\": \"order2\"}}\r"}
+[2020-10-19T08:24:28,003][WARN ][logstash.runner          ] SIGINT received. Shutting down.
+[2020-10-19T08:24:28,101][INFO ][logstash.javapipeline    ] Pipeline terminated {"pipeline.id"=>"main"}
+[2020-10-19T08:24:28,144][INFO ][logstash.runner          ] Logstash shut down.
