@@ -9,6 +9,7 @@
 * Processed events are sent to Stashes - Stash is a destination like Elasticsearch or Kafka;
 * Logstash is horizontable scalable;
 * Sending events through Logstash --> **Decoupled Architecture**. Centralized event processing @Logstash; You can remove event processing from your Web Application and centralize in Logstash;
+* **codecs** are used to encode/decode events and can be used in the input and output plugins;
 * We can configure a pipeline via command-line using the parameter **-e**. This is the simplest pipeline possible using stdin and stdout as plugins for input and output; In Logstash terminology, stdin and stdout can be called as hashs;
 
 ~~~linux
