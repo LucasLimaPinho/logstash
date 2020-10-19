@@ -32,9 +32,15 @@ output {
 
     }
 }
-
 ~~~
 
+So you can start logstash with this command: 
+
+~~~linux
+
+.\bin\logstash -f config\pipelines\pipeline.conf
+
+~~~
 
 
 
